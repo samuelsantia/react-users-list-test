@@ -7,9 +7,9 @@ const GlobalStyles = createGlobalStyle`
   :root {
     /* DEFINITIONS */
     /* colors */
-    --color-pruple: rgb(144 20 128);
+    --color-purple: rgb(144 20 128);
     --color-red: rgb(255 0 0);
-    --color-orange: rgb(0 145 255);
+    --color-orange: rgb(255 126 2);
     --color-yellow: rgb(255 229 0);
     --color-green: rgb(0 170 0);
     --color-light-blue: rgb(0 144 255);
