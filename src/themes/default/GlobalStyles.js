@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components/macro';
 
+import typography from './typography';
+
 const GlobalStyles = createGlobalStyle`
   :root {
     /* DEFINITIONS */
@@ -32,6 +34,7 @@ const GlobalStyles = createGlobalStyle`
     --weight-bold: 700;
 
     /* COMPONENTS */
+    ${typography}
   }
 
   :root.light {
