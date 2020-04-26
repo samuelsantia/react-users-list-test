@@ -6,7 +6,7 @@ import {
   weight,
   fontIncrease,
   rhythmIncrease,
-} from './cssMixins';
+} from '../../themes/utils/cssMixins';
 
 /** BaseTag */
 const TypographyBase = styled.p`

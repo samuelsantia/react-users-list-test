@@ -53,3 +53,45 @@ export const rhythmIncrease = ifProp(
     --rhythm-increase: ${prop('rhythmIncrease')};
   `
 );
+
+/**
+ * create switcher of key -> cssAttr: value;
+ *
+ * @param {string} cssAttr css attribute name
+ * @param {Object.<string, string>} switchs key value switch
+ * @return {Object.<string, css>} final switcher
+ */
+export const createCssAttrSwitcher = (cssAttr, switchs = {}) =>
+  Object.entries(switchs).reduce(
+    (switcher, [key, value]) => ({
+      ...switcher,
+      [key]: `${cssAttr}: ${value};`,
+    }),
+    {}
+  );
+
+/** sets color from prop color */
+export const switchColor = (colors, defaultValue) =>
+  ifProp(
+    'color',
+    switchProp(
+      'color',
+      createCssAttrSwitcher('color', colors),
+      css`
+        color: ${defaultValue};
+      `
+    )
+  );
+
+/** sets background-color from prop bgc */
+export const switchBgc = (colors, defaultValue) =>
+  ifProp(
+    'bgc',
+    switchProp(
+      'bgc',
+      createCssAttrSwitcher('background-color', colors),
+      css`
+        background-color: ${defaultValue};
+      `
+    )
+  );

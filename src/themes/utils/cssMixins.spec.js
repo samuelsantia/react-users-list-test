@@ -10,6 +10,9 @@ import {
   weight,
   fontIncrease,
   rhythmIncrease,
+  createCssAttrSwitcher,
+  switchColor,
+  switchBgc,
 } from './cssMixins';
 
 describe('leader', () => {
@@ -129,5 +132,103 @@ describe('rhythmIncrease', () => {
       .firstChild;
 
     expect(actual).toHaveStyleRule('--rhythm-increase', '5');
+  });
+});
+
+describe('createCssAttrSwitcher', () => {
+  it('should return empty object if no switchs passed', () => {
+    const actual = createCssAttrSwitcher('noop');
+    const expected = {};
+
+    expect(actual).toEqual(expected);
+  });
+
+  it('should reduce to key -> cssAttr: value', () => {
+    const switchs = {
+      a: 'one',
+      b: 'two',
+    };
+    const actual = createCssAttrSwitcher('test', switchs);
+    const expected = {
+      a: 'test: one;',
+      b: 'test: two;',
+    };
+    expect(actual).toEqual(expected);
+  });
+});
+
+describe('switchColor', () => {
+  const colors = {
+    red: 'red',
+  };
+  const defaultValue = 'blue';
+  const TestComponent = styled.div`
+    ${switchColor(colors)}
+  `;
+  const TestComponentWithDefault = styled.div`
+    ${switchColor(colors, defaultValue)}
+  `;
+
+  it('should not set color if no prop color', () => {
+    const actual = render(<TestComponent />).container.firstChild;
+
+    expect(actual).not.toHaveStyleRule('color');
+  });
+
+  it('should not set color if prop color not matchs and not default value', () => {
+    const actual = render(<TestComponent color="noop" />).container.firstChild;
+
+    expect(actual).not.toHaveStyleRule('color');
+  });
+
+  it('should set default value if prop color not matchs', () => {
+    const actual = render(<TestComponentWithDefault color="noop" />).container
+      .firstChild;
+
+    expect(actual).toHaveStyleRule('color', 'blue');
+  });
+
+  it('should set color if prop color matchs', () => {
+    const actual = render(<TestComponent color="red" />).container.firstChild;
+
+    expect(actual).toHaveStyleRule('color', 'red');
+  });
+});
+
+describe('switchBgc', () => {
+  const colors = {
+    red: 'red',
+  };
+  const defaultValue = 'blue';
+  const TestComponent = styled.div`
+    ${switchBgc(colors)}
+  `;
+  const TestComponentWithDefault = styled.div`
+    ${switchBgc(colors, defaultValue)}
+  `;
+
+  it('should not set background-color if no prop bgc', () => {
+    const actual = render(<TestComponent />).container.firstChild;
+
+    expect(actual).not.toHaveStyleRule('background-color');
+  });
+
+  it('should not set background-color if prop bgc not matchs and not default value', () => {
+    const actual = render(<TestComponent bgc="noop" />).container.firstChild;
+
+    expect(actual).not.toHaveStyleRule('background-color');
+  });
+
+  it('should set default value if prop bgc not matchs', () => {
+    const actual = render(<TestComponentWithDefault bgc="noop" />).container
+      .firstChild;
+
+    expect(actual).toHaveStyleRule('background-color', 'blue');
+  });
+
+  it('should set color if prop bgc matchs', () => {
+    const actual = render(<TestComponent bgc="red" />).container.firstChild;
+
+    expect(actual).toHaveStyleRule('background-color', 'red');
   });
 });
