@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components/macro';
 
 import typography from './typography';
+import card from './card';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -33,11 +34,17 @@ const GlobalStyles = createGlobalStyle`
     --weight-normal: 300;
     --weight-bold: 700;
 
+    /* shadows */
+    --shadow-distance-default: calc(5 / var(--size-base) * 1rem);
+    --shadow-blur-default: calc(var(--shadow-distance-default) * 2);
+    --shadow-default: 0 var(--shadow-distance-default) var(--shadow-blur-default) rgba(0, 0, 0, .2);
+
     /* COMPONENTS */
     ${typography}
+    ${card}
   }
 
-  :root.light {
+  :root {
     --background-color: var(--color-light-gray);
     --foreground-color: var(--color-white);
     --text-color: var(--color-black);
