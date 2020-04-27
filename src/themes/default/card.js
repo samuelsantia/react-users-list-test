@@ -12,14 +12,14 @@ export default css`
   --card-header-v-align: center;
   --card-header-padding: var(--scale-rhythm) var(--card-padding);
 
-  @media ${medias.mobile} {
+  @media ${medias.tablet} {
     --card-direction: column;
-    --card-padding: calc(var(--scale-rhythm) * 2);
 
     --card-header-h-align: flex-end;
   }
 
   @media ${medias.laptop} {
+    --card-padding: calc(var(--scale-rhythm) * 2);
     --card-header-h-align: center;
   }
 `;
