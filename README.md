@@ -1,4 +1,49 @@
+User list built with react for technical test.<br />
+It uses [https://reqres.in/](reqres.in) api to retrieve users
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## What inside
+
+The project is built with the recommendations technical test libraries and some personal choices:
+
+* `react`: as ui library
+* `react-router`: to handle navigations
+* `redux`: to manage application global state
+* `reselect`: to optimize `redux` selectors
+* `redux-saga`: to separate `redux` actions of the async logic
+* `connected-react-router`: to manage router state from `redux`
+* `styled-components`: to create components styles
+* `css vars`: to handle themes variables and media queries. They are a powerful tool :)
+* `storybook`: for develop components in isolation mode and doc them.
+* `@testing-library/react`: to do the tests
+
+## Getting started
+
+Clone the repository
+
+```zsh
+git clone https://github.com/samuelsantia/react-users-list-test.git
+```
+
+Go to the source folder and install dependencies
+
+```zsh
+cd react-users-list-test
+npm install
+```
+
+Start development server to develop the app
+
+```zsh
+npm start
+```
+
+Start storybook to develop components in isolation mode
+
+```zsh
+npm run storybook
+```
 
 ## Available Scripts
 
@@ -16,6 +61,10 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run storybook`
+
+Launches storybook server to develop components in isolation mode
 
 ### `npm run build`
 
