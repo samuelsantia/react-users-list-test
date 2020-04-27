@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { addDecorator } from '@storybook/react';
+import { addDecorator, addParameters } from '@storybook/react';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import GlobalStyles from '../src/themes/default/GlobalStyles';
 import VerticalRhythmHelper from '../src/components/VerticalRhythmHelper';
 
@@ -12,6 +13,12 @@ const FloatingButtonsContainer = styled.div`
 const FloatingButton = styled.button`
   margin-left: calc(var(--scale-rhythm) / 2);
 `
+
+addParameters({
+  viewport: {
+    viewports: INITIAL_VIEWPORTS
+  }
+});
 
 addDecorator(storyFn => {
   const [showVerticalGrid, setShowVerticalGrid] = useState(false);
