@@ -8,7 +8,7 @@ import {
   rhythmIncrease,
 } from '../../themes/utils/cssMixins';
 
-/** BaseTag */
+/** Typography base styles using cssMixins */
 const TypographyBase = styled.p`
   ${fontIncrease}
   ${rhythmIncrease}
