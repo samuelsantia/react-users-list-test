@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components/macro';
 import typography from './typography';
 import card from './card';
 import profile from './profile';
+import gridList from './gridList';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -44,6 +45,7 @@ const GlobalStyles = createGlobalStyle`
     ${typography}
     ${card}
     ${profile}
+    ${gridList}
   }
 
   :root {
