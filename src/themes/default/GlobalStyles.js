@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components/macro';
 
 import typography from './typography';
 import card from './card';
+import profile from './profile';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -42,6 +43,7 @@ const GlobalStyles = createGlobalStyle`
     /* COMPONENTS */
     ${typography}
     ${card}
+    ${profile}
   }
 
   :root {
