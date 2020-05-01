@@ -13,6 +13,7 @@ The project is built with the recommendations technical test libraries and some 
 * `reselect`: to optimize `redux` selectors
 * `redux-saga`: to separate `redux` actions of the async logic
 * `connected-react-router`: to manage router state from `redux`
+* `redux-dynamic-modules`: to load / unloads `redux` reducers and sagas to code splitting
 * `styled-components`: to create components styles
 * `css vars`: to handle themes variables and media queries. They are a powerful tool :)
 * `storybook`: for develop components in isolation mode and doc them.
