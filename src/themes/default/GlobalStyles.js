@@ -4,6 +4,8 @@ import typography from './typography';
 import card from './card';
 import profile from './profile';
 import gridList from './gridList';
+import appHeader from './appHeader';
+import appLogo from './appLogo';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -46,6 +48,9 @@ const GlobalStyles = createGlobalStyle`
     ${card}
     ${profile}
     ${gridList}
+    /* APP components */
+    ${appHeader}
+    ${appLogo}
   }
 
   :root {
