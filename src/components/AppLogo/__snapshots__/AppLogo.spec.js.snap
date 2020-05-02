@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppLogo /> it should render 1`] = `
+.c0 {
+  --font-increase: var(--app-logo-font-increase,3);
+  --rhythm-increase: var(--app-logo-rhythm-increase,2);
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: var(--app-logo-base-color,inherit);
+}
+
+.c0 strong {
+  font-weight: bold;
+  color: var(--app-logo-strong-color,inherit);
+}
+
+<h1
+  class="c0"
+>
+  <strong>
+    Test
+  </strong>
+  Logo
+</h1>
+`;
