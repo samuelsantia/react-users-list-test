@@ -1,22 +1,21 @@
 import React from 'react';
 
 import Typography from '../Typography';
+import AppLogo from '../AppLogo';
 import AppHeader from './AppHeader';
 
 export default {
   title: 'AppHeader',
   component: AppHeader,
+  subcomponents: { AppLogo },
 };
 
 export const basic = () => (
   <AppHeader
     start={
-      <Typography variant="h2">
-        <Typography variant="h2" tag="strong" weight="bold">
-          App
-        </Typography>
-        Logo
-      </Typography>
+      <AppLogo>
+        <strong>App</strong>Logo
+      </AppLogo>
     }
     end={
       <Typography variant="h6" tag="p">
