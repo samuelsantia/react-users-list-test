@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardHeader /> it should render 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+>
+  Test CardHeader
+</header>
+`;
+
+exports[`<CardHeader /> should render bgc color darkBlue 1`] = `
+.c0 {
+  background-color: var(--color-dark-blue);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+/>
+`;
+
+exports[`<CardHeader /> should render bgc color green 1`] = `
+.c0 {
+  background-color: var(--color-green);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+/>
+`;
+
+exports[`<CardHeader /> should render bgc color lightBlue 1`] = `
+.c0 {
+  background-color: var(--color-light-blue);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+/>
+`;
+
+exports[`<CardHeader /> should render bgc color orange 1`] = `
+.c0 {
+  background-color: var(--color-orange);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+/>
+`;
+
+exports[`<CardHeader /> should render bgc color purple 1`] = `
+.c0 {
+  background-color: var(--color-purple);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+/>
+`;
+
+exports[`<CardHeader /> should render bgc color red 1`] = `
+.c0 {
+  background-color: var(--color-red);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+/>
+`;
+
+exports[`<CardHeader /> should render bgc color yellow 1`] = `
+.c0 {
+  background-color: var(--color-yellow);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: var(--card-header-h-align,center);
+  -webkit-justify-content: var(--card-header-h-align,center);
+  -ms-flex-pack: var(--card-header-h-align,center);
+  justify-content: var(--card-header-h-align,center);
+  -webkit-align-items: var(--card-header-v-align,center);
+  -webkit-box-align: var(--card-header-v-align,center);
+  -ms-flex-align: var(--card-header-v-align,center);
+  align-items: var(--card-header-v-align,center);
+  padding: var(--card-header-padding,1rem);
+}
+
+<header
+  class="c0"
+/>
+`;

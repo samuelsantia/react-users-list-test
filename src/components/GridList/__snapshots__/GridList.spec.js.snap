@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GridList /> should render 1`] = `
+.c0 {
+  display: grid;
+  margin: var(--grid-margin,1rem);
+  grid-template-columns: var(--grid-columns,1fr);
+  gap: var(--grid-gap,1rem);
+}
+
+<section
+  class="c0"
+>
+  Test GridList
+</section>
+`;

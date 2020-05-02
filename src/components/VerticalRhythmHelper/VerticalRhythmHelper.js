@@ -19,7 +19,8 @@ export const VerticalRhythmHelperBase = styled.div`
  * dont renders in production environments
  */
 export default function VerticalRhythmHelper(props) {
-  if (process.env.NODE_ENV !== 'production') {
-    return <VerticalRhythmHelperBase {...props} />;
+  if (process.env.NODE_ENV === 'production') {
+    return null;
   }
+  return <VerticalRhythmHelperBase {...props} />;
 }

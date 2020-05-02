@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardContent /> should render 1`] = `
+.c0 {
+  padding: var(--scale-rhythm,1rem) var(--card-padding,1rem) var(--card-padding,1rem);
+}
+
+.c0:first-child {
+  padding-top: var(--card-padding);
+}
+
+<div
+  class="c0"
+>
+  Test CardContent
+</div>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> should render 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: var(--card-direction,row);
+  -ms-flex-direction: var(--card-direction,row);
+  flex-direction: var(--card-direction,row);
+  background-color: var(--card-background-color,white);
+  border-radius: var(--card-border-radius,5px);
+  box-shadow: var(--card-shadow,none);
+  overflow: hidden;
+}
+
+<article
+  class="c0"
+>
+  Test Card
+</article>
+`;

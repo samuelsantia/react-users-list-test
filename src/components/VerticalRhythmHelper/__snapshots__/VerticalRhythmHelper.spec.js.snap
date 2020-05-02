@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerticalRhythmHelper /> should render 1`] = `
+.c0 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: linear-gradient(rgba(0,119,179,0.2) 1px,transparent 1px) left top / var(--scale-rhythm) var(--scale-rhythm);
+}
+
+<div
+  class="c0"
+/>
+`;

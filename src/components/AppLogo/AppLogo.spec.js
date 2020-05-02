@@ -5,7 +5,7 @@ import 'jest-styled-components';
 import AppLogo from './AppLogo';
 
 describe('<AppLogo />', () => {
-  test('it should render', () => {
+  it('it should render', () => {
     const { container } = render(
       <AppLogo>
         <strong>Test</strong>Logo
