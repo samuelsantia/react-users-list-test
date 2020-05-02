@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components/macro';
 import PropTypes from 'prop-types';
+import { medias } from '../../themes/utils';
 
 /**
  * sets display flex
@@ -27,8 +28,12 @@ export const HeaderStartSide = styled.div`
 
 /** header center side container */
 export const HeaderCenterSide = styled.div`
-  ${basicHeaderFlex('center')};
-  flex: 1;
+  display: none;
+
+  @media ${medias.tablet} {
+    ${basicHeaderFlex('center')};
+    flex: 1;
+  }
 `;
 
 /** header right side container */
