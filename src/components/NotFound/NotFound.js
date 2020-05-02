@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import PropTypes from 'prop-types';
 import Typography from '../Typography';
 
 export const NotFoundWrapper = styled.div`
@@ -16,17 +17,23 @@ export const NotFoundWrapper = styled.div`
   }
 `;
 
-function NotFound() {
+/** renders NotFound component */
+function NotFound({ children = 'Page not found' }) {
   return (
     <NotFoundWrapper>
       <div>
         <Typography variant="h1" weight="bold">
           404
         </Typography>
-        <Typography>Page not found</Typography>
+        <Typography>{children}</Typography>
       </div>
     </NotFoundWrapper>
   );
 }
+
+NotFound.propTypes = {
+  /** message to show */
+  children: PropTypes.node,
+};
 
 export default NotFound;
